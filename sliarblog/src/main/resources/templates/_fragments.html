@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:fragment="head(title)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+    <title th:replace="${title}">Sliar的个人博客-详情</title>
+
+    <link rel="stylesheet" media="screen" href="../static/_css/style.css" type="text/css" th:href="@{/_css/style.css}"/>
+
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" th:href="@{/css/style.css}" />
+    <link rel="stylesheet" type="text/css" href="../static/assets/waifu.css" th:href="@{/assets/waifu.css}"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.4/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/typo.css" th:href="@{/css/typo.css}">
+    <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">
+    <link rel="stylesheet" href="../static/lib/prism/prism.css" th:href="@{/lib/prism/prism.css}">
+    <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
+
+
+    <script src="../static/js/jquery-3.2.1.min.js" th:src="@{/js/jquery-3.2.1.min.js}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.4/dist/semantic.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="../static/lib/prism/prism.js" th:src="@{/lib/prism/prism.js}"></script>
+    <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
+    <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
+</head>
+<body>
+
+<!--    头部导航栏 start-->
+<nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-mini">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui teal header item">Sliar</h2>
+            <a href="#" th:href="@{/}" class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="home icon large"></i>首页</a>
+            <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="idea icon large"></i>分类</a>
+            <a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="tags icon large"></i>标签</a>
+            <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class="clone icon large"></i>归档</a>
+            <a href="#" th:href="@{/about}" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class="info icon large"></i>关于</a>
+            <div class="right m-item item m-mobile-hide">
+                <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
+                    <div class="ui icon inverted  input">
+                        <input type="text" name="query" placeholder="搜索..." th:value="${query}">
+                        <i onclick="document.forms['search'].submit()" class="search link icon"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button m-top-right m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+<!--    头部导航栏 end-->
+
+<!--    尾部 start-->
+<footer th:fragment="footer" class="ui inverted vertical segment fixed-bottom">
+    <div class="ui center aligned container">
+        <div class="ui stackable inverted divided grid">
+            <div class="two wide column"></div>
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="../static/img/wechat.png" th:src="@{/img/wechat.png}" alt="" class="ui image rounded small">
+                    </div>
+                </div>
+
+            </div>
+            <div class="six wide column">Copyright© 2020 &nbsp;&nbsp; Sliar <br><br>
+                <i class="heart icon animat" style="color:#ff71a8"></i>
+                <span class="my-face">ღゝ◡╹)ノ♡</span><br><br>
+                <span id="sitetime"></span><br><br>
+                <span>努力学习<a class="my-face">✊</a>&nbsp;&nbsp;争取一个好未来<a class="my-face">O(∩_∩)O</a></span>
+            </div>
+            <div class="four wide column">
+                <span>本博客由<a class="my-face">👉</a> <span th:text="#{fragments.admin}">aaa</span><a class="my-face">👈</a>搭建</span><br><br>
+                <span>前端基于&nbsp;&nbsp;<a href="https://semantic-ui.com/">Semantic Ul</a></span><br><br>
+                <span>后台基于&nbsp;&nbsp;<a href="https://spring.io/">SpringBoot</a></span><br><br>
+                <i class="heart icon my-face" style="color:#ff71a8"></i>
+                <i class="heart icon my-face" style="color:#ff71a8"></i>
+                <i class="heart icon my-face" style="color:#ff71a8"></i>
+                <i class="heart icon my-face" style="color:#ff71a8"></i>
+                <i class="heart icon my-face" style="color:#ff71a8"></i>
+                <i class="heart icon my-face" style="color:#ff71a8"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--    尾部 end-->
+
+
+</body>
+</html>

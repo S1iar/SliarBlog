@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/main/java/com/sliar/sliarblog/dao/BlogRepository.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/sliar/sliarblog/dao/TagRepository.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/sliar/sliarblog/dao/TypeRepository.java" dialect="MySQL" />
+  </component>
+</project>

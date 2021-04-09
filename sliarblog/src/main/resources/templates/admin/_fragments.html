@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:fragment="head(title)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+    <title th:replace="${title}">Sliar的个人博客-详情</title>
+
+    <link rel="stylesheet" media="screen" href="../../static/_css/style.css" type="text/css" th:href="@{/_css/style.css}"/>
+
+    <link rel="stylesheet" type="text/css" href="../../static/css/style.css" th:href="@{/css/style.css}" />
+    <link rel="stylesheet" type="text/css" href="../../static/assets/waifu.css" th:href="@{/assets/waifu.css}"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.4/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/typo.css" th:href="@{/css/typo.css}">
+    <link rel="stylesheet" href="../../static/css/animate.css" th:href="@{/css/animate.css}">
+    <link rel="stylesheet" href="../../static/lib/prism/prism.css" th:href="@{/lib/prism/prism.css}">
+    <link rel="stylesheet" href="../../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
+    <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css" th:href="@{/lib/editormd/css/editormd.min.css}"/>
+
+    <script src="../../static/js/jquery-3.2.1.min.js" th:src="@{/js/jquery-3.2.1.min.js}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.4/dist/semantic.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="../../static/lib/prism/prism.js" th:src="@{/lib/prism/prism.js}"></script>
+    <script src="../../static/lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
+</head>
+<body>
+
+<nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-mini m-shadow-small">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui teal header item">管理后台</h2>
+            <a th:href="@{/admin/blogs}" href="#" class="m-item item m-mobile-hide"  th:classappend="${n==1} ? 'active'"><i class="home icon large"></i>博客</a>
+            <a th:href="@{/admin/types}" href="#" class="m-item item m-mobile-hide"  th:classappend="${n==2} ? 'active'"><i class="idea icon large"></i>分类</a>
+            <a th:href="@{/admin/tags}" href="#" class="m-item item m-mobile-hide"  th:classappend="${n==3} ? 'active'"><i class="tags icon large"></i>标签</a>
+            <div class="right m-item m-mobile-hide menu">
+                <div class="ui dropdown item">
+                    <div class="text">
+                        <img class="ui avatar image" src="../../static/img/Sliar.png" th:src="@{/img/Sliar.png}">
+                        <span th:text="${session.user.nickname}">Sliar</span>
+                    </div>
+
+<!--                    <div class="text">-->
+<!--                        <img class="ui avatar image" src="../../static/img/Sliar.png" th:src="@{${session.user.avatar}}">-->
+<!--                        <span th:text="${session.user.nickname}">Sliar</span>-->
+<!--                    </div>-->
+
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a href="#" th:href="@{/admin/logout}" class="item">注销</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button m-top-right m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+<!--    尾部 start-->
+<footer th:fragment="footer" class="ui inverted vertical segment fixed-bottom">
+    <div class="ui center aligned container">
+        <div class="ui stackable inverted divided grid">
+            <div class="two wide column"></div>
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="../../static/img/wechat.png" th:src="@{/img/wechat.png}" alt="" class="ui image rounded small">
+                    </div>
+                </div>
+
+            </div>
+            <div class="six wide column">Copyright© 2020 &nbsp;&nbsp; Sliar <br><br>
+                <i class="heart icon animat" style="color:#ff71a8"></i>
+                <span class="my-face">ღゝ◡╹)ノ♡</span><br><br>
+                <span id="sitetime"></span><br><br>
+                <span>努力学习<a class="my-face">✊</a>&nbsp;&nbsp;争取一个好未来<a class="my-face">O(∩_∩)O</a></span>
+            </div>
+            <div class="four wide column">
+                <span>本博客由<a class="my-face">👉</a>Sliar<a class="my-face">👈</a>搭建</span><br><br>
+                <span>前端基于&nbsp;&nbsp;<a href="https://semantic-ui.com/">Semantic Ul</a></span><br><br>
+                <span>后台基于&nbsp;&nbsp;<a href="https://spring.io/">SpringBoot</a></span><br><br>
+                <i class="heart icon my-face" style="color:#ff71a8"></i>
+                <i class="heart icon my-face" style="color:#ff71a8"></i>
+                <i class="heart icon my-face" style="color:#ff71a8"></i>
+                <i class="heart icon my-face" style="color:#ff71a8"></i>
+                <i class="heart icon my-face" style="color:#ff71a8"></i>
+                <i class="heart icon my-face" style="color:#ff71a8"></i>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<!--    尾部 end-->
+
+
+<!-- 看板娘设置 start -->
+<div class="waifu large screen only">
+    <div class="waifu-tips"></div>
+    <canvas id="live2d" width="216" height="225" class="live2d"></canvas>
+    <div class="waifu-tool">
+        <span class="fui-home"></span>
+        <span class="fui-chat"></span>
+        <span class="fui-eye"></span>
+        <span class="fui-user"></span>
+        <span class="fui-photo"></span>
+        <!--<span class="fui-info-circle"></span>-->
+        <span class="fui-cross"></span>
+    </div>
+</div>
+<script src="../../static/assets/waifu-tips.js" th:src="@{/assets/waifu-tips.js}"></script>
+<script src="../../static/assets/live2d.js" th:src="@{/assets/live2d.js}"></script>
+<script type="text/javascript">initModel("assets/")</script>
+<!-- 看板娘设置 end -->
+
+</body>
+</html>

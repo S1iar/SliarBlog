@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sliarblog?serverTimezone=UTC
+    username: root
+    password: Yzq784945098
+
+  jpa:
+    hibernate:
+#      重新启动更新数据表结构
+      ddl-auto: none
+#      可以把sql语句输出
+    show-sql: true
+
+logging:
+  level:
+    root: warn
+    com.sliar: info
+  file:
+    path: log/blog-pro.log
+
+server:
+  port: 80

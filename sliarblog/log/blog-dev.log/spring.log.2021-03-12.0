@@ -1,0 +1,25 @@
+2021-03-12 17:47:05.661  INFO 1864 --- [main] c.s.sliarblog.SliarblogApplicationTests  : Starting SliarblogApplicationTests on DESKTOP-EJ20H4B with PID 1864 (started by Sliar in E:\IDEA\WebProject\sliarblog)
+2021-03-12 17:47:05.678 DEBUG 1864 --- [main] c.s.sliarblog.SliarblogApplicationTests  : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2021-03-12 17:47:05.682  INFO 1864 --- [main] c.s.sliarblog.SliarblogApplicationTests  : The following profiles are active: dev
+2021-03-12 17:47:09.283  INFO 1864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-03-12 17:47:09.700  INFO 1864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 358ms. Found 5 JPA repository interfaces.
+2021-03-12 17:47:10.387  WARN 1864 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.sliar.sliarblog]' package. Please check your configuration.
+2021-03-12 17:47:13.665  INFO 1864 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 17:47:13.955  INFO 1864 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-12 17:47:14.207  INFO 1864 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2021-03-12 17:47:14.916  INFO 1864 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-03-12 17:47:15.489  WARN 1864 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-12 17:47:16.183  INFO 1864 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-12 17:47:16.878  INFO 1864 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-03-12 17:47:17.291  WARN 1864 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-03-12 17:47:18.086  INFO 1864 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories¡­
+2021-03-12 17:47:18.316  INFO 1864 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-12 17:47:18.402  INFO 1864 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-12 17:47:21.479  INFO 1864 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-12 17:47:21.517  INFO 1864 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 17:47:24.635  INFO 1864 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-03-12 17:47:24.682  INFO 1864 --- [main] c.s.sliarblog.SliarblogApplicationTests  : Started SliarblogApplicationTests in 21.492 seconds (JVM running for 27.039)
+2021-03-12 17:47:25.035  INFO 1864 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-12 17:47:25.039  INFO 1864 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 17:47:25.042  INFO 1864 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-12 17:47:25.087  INFO 1864 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

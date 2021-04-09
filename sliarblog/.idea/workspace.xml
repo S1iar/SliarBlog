@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="03132325-bfd4-4a93-84ab-7cef9cb5dbc5" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sliarblog@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sliarblog@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sliarblog@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="sliarblog: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sliarblog@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="sliarblog: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="t_blog: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="1hquYQTSzci6YWgBU8pWkE7l3ZS" />
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$PROJECT_DIR$/../../Android/SDK" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.22745492" />
+    <property name="settings.editor.selected.configurable" value="spring.boot" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IDEA\WebProject\sliarblog\src\main\resources\templates\admin" />
+      <recent name="E:\IDEA\WebProject\sliarblog\src\main\resources" />
+      <recent name="E:\IDEA\WebProject\sliarblog\src\main\resources\static\_images" />
+      <recent name="E:\IDEA\WebProject\sliarblog\src\main\resources\templates" />
+      <recent name="E:\IDEA\WebProject\sliarblog\src\main\resources\static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sliar.sliarblog.web.admin" />
+      <recent name="com.sliar.sliarblog.service.Impl" />
+      <recent name="com.sliar.sliarblog.service" />
+      <recent name="com.sliar.sliarblog.dao" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IDEA\WebProject\sliarblog\src\main\resources\static\img" />
+      <recent name="E:\IDEA\WebProject\sliarblog\src\main\resources\static\_images" />
+      <recent name="E:\IDEA\WebProject\sliarblog\src\main\resources\static" />
+      <recent name="E:\IDEA\WebProject\sliarblog\src\main\resources\templates\admin" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SliarblogApplication">
+    <configuration name="MD5Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sliar.sliarblog.util.MD5Utils" />
+      <module name="sliarblog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sliar.sliarblog.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SliarblogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="sliarblog" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sliar.sliarblog.SliarblogApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MD5Utils" />
+      <item itemvalue="Spring Boot.SliarblogApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MD5Utils" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03132325-bfd4-4a93-84ab-7cef9cb5dbc5" name="Default Changelist" comment="" />
+      <created>1600750990359</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600750990359</updated>
+      <workItem from="1600750993014" duration="12597000" />
+      <workItem from="1600820101380" duration="7274000" />
+      <workItem from="1600913085592" duration="3495000" />
+      <workItem from="1600997600013" duration="2454000" />
+      <workItem from="1601263477860" duration="2311000" />
+      <workItem from="1601342228423" duration="1827000" />
+      <workItem from="1601378392084" duration="413000" />
+      <workItem from="1601393740939" duration="8275000" />
+      <workItem from="1601434881474" duration="7088000" />
+      <workItem from="1601480334817" duration="5268000" />
+      <workItem from="1601523934237" duration="2146000" />
+      <workItem from="1601610627784" duration="7152000" />
+      <workItem from="1601726394586" duration="11000000" />
+      <workItem from="1601775555977" duration="11293000" />
+      <workItem from="1601862821800" duration="8843000" />
+      <workItem from="1601995586706" duration="5721000" />
+      <workItem from="1602083886640" duration="653000" />
+      <workItem from="1602150764575" duration="8336000" />
+      <workItem from="1602208360298" duration="13977000" />
+      <workItem from="1602472506797" duration="446000" />
+      <workItem from="1602477162934" duration="15207000" />
+      <workItem from="1602552628841" duration="14985000" />
+      <workItem from="1602739339388" duration="2484000" />
+      <workItem from="1602777120230" duration="1978000" />
+      <workItem from="1602812344357" duration="15114000" />
+      <workItem from="1602864390790" duration="2882000" />
+      <workItem from="1602926142541" duration="418000" />
+      <workItem from="1603413548534" duration="623000" />
+      <workItem from="1603444047125" duration="204000" />
+      <workItem from="1603673225334" duration="3342000" />
+      <workItem from="1603760120826" duration="3257000" />
+      <workItem from="1604042343881" duration="1927000" />
+      <workItem from="1604245181742" duration="194000" />
+      <workItem from="1604281948228" duration="1378000" />
+      <workItem from="1604624463135" duration="2881000" />
+      <workItem from="1605142184785" duration="1635000" />
+      <workItem from="1605337911927" duration="389000" />
+      <workItem from="1605488445772" duration="1212000" />
+      <workItem from="1605596345743" duration="1261000" />
+      <workItem from="1605833467718" duration="633000" />
+      <workItem from="1606182798689" duration="6351000" />
+      <workItem from="1606215419478" duration="597000" />
+      <workItem from="1606272137900" duration="862000" />
+      <workItem from="1606291748112" duration="1207000" />
+      <workItem from="1606300826091" duration="678000" />
+      <workItem from="1606373328229" duration="1657000" />
+      <workItem from="1606654872149" duration="1717000" />
+      <workItem from="1606819814408" duration="2171000" />
+      <workItem from="1606990996867" duration="2197000" />
+      <workItem from="1607242396340" duration="3363000" />
+      <workItem from="1607345670246" duration="3345000" />
+      <workItem from="1607388222474" duration="1240000" />
+      <workItem from="1607743157286" duration="1647000" />
+      <workItem from="1607906925935" duration="235000" />
+      <workItem from="1608015109024" duration="2248000" />
+      <workItem from="1608084166623" duration="1796000" />
+      <workItem from="1608434210504" duration="4569000" />
+      <workItem from="1608514089488" duration="5405000" />
+      <workItem from="1608604841460" duration="4830000" />
+      <workItem from="1608684624805" duration="2815000" />
+      <workItem from="1608734528182" duration="1196000" />
+      <workItem from="1608805984634" duration="1318000" />
+      <workItem from="1610028269580" duration="438000" />
+      <workItem from="1610077889543" duration="7329000" />
+      <workItem from="1610367115309" duration="1028000" />
+      <workItem from="1610519325023" duration="5388000" />
+      <workItem from="1610687173797" duration="1240000" />
+      <workItem from="1610782840300" duration="2767000" />
+      <workItem from="1610789819851" duration="25000" />
+      <workItem from="1611206439915" duration="7893000" />
+      <workItem from="1611284599774" duration="8418000" />
+      <workItem from="1611368378656" duration="1864000" />
+      <workItem from="1611490289177" duration="3869000" />
+      <workItem from="1611549638116" duration="1233000" />
+      <workItem from="1611558894505" duration="5686000" />
+      <workItem from="1611633277285" duration="13574000" />
+      <workItem from="1611726765013" duration="8594000" />
+      <workItem from="1611737831672" duration="2009000" />
+      <workItem from="1611807062025" duration="13712000" />
+      <workItem from="1611887130978" duration="15675000" />
+      <workItem from="1612063283728" duration="7443000" />
+      <workItem from="1612081949987" duration="10066000" />
+      <workItem from="1612155677276" duration="5704000" />
+      <workItem from="1612324248290" duration="15266000" />
+      <workItem from="1612408676437" duration="1194000" />
+      <workItem from="1612427968958" duration="6931000" />
+      <workItem from="1612580334213" duration="5163000" />
+      <workItem from="1612751815704" duration="1926000" />
+      <workItem from="1612774372141" duration="215000" />
+      <workItem from="1612940633242" duration="1261000" />
+      <workItem from="1613019931047" duration="1266000" />
+      <workItem from="1613029118115" duration="141000" />
+      <workItem from="1613292398599" duration="1031000" />
+      <workItem from="1613895414950" duration="788000" />
+      <workItem from="1613896682422" duration="212000" />
+      <workItem from="1613982016419" duration="108000" />
+      <workItem from="1613982874758" duration="286000" />
+      <workItem from="1613983274968" duration="845000" />
+      <workItem from="1613985793849" duration="474000" />
+      <workItem from="1614234901490" duration="358000" />
+      <workItem from="1614409190808" duration="73000" />
+      <workItem from="1614492872200" duration="1930000" />
+      <workItem from="1614497014575" duration="53000" />
+      <workItem from="1614497251052" duration="194000" />
+      <workItem from="1614766909008" duration="2089000" />
+      <workItem from="1614769799681" duration="217000" />
+      <workItem from="1614775726498" duration="2543000" />
+      <workItem from="1614821153343" duration="420000" />
+      <workItem from="1615118159525" duration="3537000" />
+      <workItem from="1615132202667" duration="264000" />
+      <workItem from="1615373507066" duration="694000" />
+      <workItem from="1615542067623" duration="3591000" />
+      <workItem from="1615728441114" duration="2677000" />
+      <workItem from="1615819240112" duration="669000" />
+      <workItem from="1615885044182" duration="874000" />
+      <workItem from="1615978703967" duration="2098000" />
+      <workItem from="1616065763116" duration="4822000" />
+      <workItem from="1616076321554" duration="15000" />
+      <workItem from="1616077577521" duration="2436000" />
+      <workItem from="1616115517052" duration="38000" />
+      <workItem from="1616141856098" duration="81000" />
+      <workItem from="1616248706443" duration="123000" />
+      <workItem from="1617804724237" duration="534000" />
+      <workItem from="1617806189354" duration="26000" />
+      <workItem from="1617806439319" duration="1531000" />
+      <workItem from="1617809722493" duration="352000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

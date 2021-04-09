@@ -1,0 +1,36 @@
+2021-03-15 22:40:53.553  INFO 17928 --- [restartedMain] c.sliar.sliarblog.SliarblogApplication   : Starting SliarblogApplication on DESKTOP-EJ20H4B with PID 17928 (E:\IDEA\WebProject\sliarblog\target\classes started by Sliar in E:\IDEA\WebProject\sliarblog)
+2021-03-15 22:40:53.559 DEBUG 17928 --- [restartedMain] c.sliar.sliarblog.SliarblogApplication   : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2021-03-15 22:40:53.560  INFO 17928 --- [restartedMain] c.sliar.sliarblog.SliarblogApplication   : The following profiles are active: dev
+2021-03-15 22:40:53.611  INFO 17928 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-15 22:40:53.622  INFO 17928 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-15 22:40:55.203  INFO 17928 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-03-15 22:40:55.310  INFO 17928 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97ms. Found 5 JPA repository interfaces.
+2021-03-15 22:40:55.444  WARN 17928 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.sliar.sliarblog]' package. Please check your configuration.
+2021-03-15 22:40:56.134  INFO 17928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-15 22:40:56.190  INFO 17928 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-15 22:40:56.190  INFO 17928 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-03-15 22:40:56.301  INFO 17928 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-15 22:40:56.301  INFO 17928 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2678 ms
+2021-03-15 22:40:56.517  INFO 17928 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-15 22:40:56.572  INFO 17928 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-15 22:40:56.638  INFO 17928 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2021-03-15 22:40:56.732  WARN 17928 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-15 22:40:56.822  INFO 17928 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-03-15 22:40:56.971  INFO 17928 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-15 22:40:57.180  INFO 17928 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-03-15 22:40:57.280  WARN 17928 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-03-15 22:40:58.973  INFO 17928 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-15 22:40:59.021  INFO 17928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-15 22:40:59.023  INFO 17928 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-03-15 22:40:59.065  INFO 17928 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-15 22:40:59.090  INFO 17928 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-03-15 22:41:00.803  INFO 17928 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-15 22:41:00.819  INFO 17928 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-15 22:41:01.855  INFO 17928 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-03-15 22:41:01.866  INFO 17928 --- [restartedMain] c.sliar.sliarblog.SliarblogApplication   : Started SliarblogApplication in 8.876 seconds (JVM running for 12.526)
+2021-03-15 22:41:04.351  INFO 17928 --- [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-15 22:41:04.351  INFO 17928 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-15 22:41:04.363  INFO 17928 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2021-03-15 22:41:04.406  INFO 17928 --- [http-nio-0.0.0.0-8080-exec-1] com.sliar.sliarblog.aspect.LogAspect     : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sliar.sliarblog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: update_time: DESC], BlogQuery{title='null', typeId=null, recommend=false}, {blogQuery=BlogQuery{title='null', typeId=null, recommend=false}, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2021-03-15 22:41:04.850  INFO 17928 --- [http-nio-0.0.0.0-8080-exec-1] com.sliar.sliarblog.aspect.LogAspect     : Result : index
+2021-03-15 22:41:04.850  INFO 17928 --- [http-nio-0.0.0.0-8080-exec-1] com.sliar.sliarblog.aspect.LogAspect     : ---------doAfter----------

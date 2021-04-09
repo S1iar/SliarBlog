@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+    <title>博客管理登陆</title>
+
+    <link rel="stylesheet" type="text/css" href="../../static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/assets/waifu.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.4/dist/semantic.min.css">
+
+    <script src="../../static/js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.4/dist/semantic.min.js"></script>
+
+</head>
+<body>
+<!--    动态背景 start -->
+<canvas width="100%" height="100%"></canvas>
+<!--    动态背景 end -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <div class="m-container m-opacity-mini m-padded-large" style="max-width: 35em !important;">
+        <div class="ui container">
+            <div class="ui middle aligned center aligned grid">
+                <div class="column">
+                    <h2 class="ui teal image header">
+                        <div class="content">
+                            管理后台登陆
+                        </div>
+                    </h2>
+                    <form class="ui large form" method="post" action="#" th:action="@{/admin/login}">
+                        <div class="ui segment">
+                            <div class="field">
+                                <div class="ui left icon input">
+                                    <i class="user icon"></i>
+                                    <input type="text" name="username" placeholder="用户名">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui left icon input">
+                                    <i class="lock icon"></i>
+                                    <input type="password" name="password" placeholder="密码">
+                                </div>
+                            </div>
+                            <button class="ui fluid large teal submit button">登陆</button>
+                        </div>
+
+                        <div class="ui error message"></div>
+
+                        <div class="ui negative message" th:unless="${#strings.isEmpty(message)}" th:text="${message}">用戶名和密碼錯誤</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 看板娘设置 start -->
+    <div class="waifu large screen only">
+        <div class="waifu-tips"></div>
+        <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
+        <div class="waifu-tool">
+            <span class="fui-home"></span>
+            <span class="fui-chat"></span>
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+            <!--<span class="fui-info-circle"></span>-->
+            <span class="fui-cross"></span>
+        </div>
+    </div>
+    <script src="../../static/assets/waifu-tips.js"></script>
+    <script src="../../static/assets/live2d.js"></script>
+    <script type="text/javascript">initModel("assets/")</script>
+    <!-- 看板娘设置 end -->
+
+<!--博客存活时间js start-->
+<script language=javascript>
+    function siteTime() {
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth() + 1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+
+        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+
+        var t1 = Date.UTC(2021, 1, 1, 0, 0, 0); //北京时间2019-8-1 00:00:00
+        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+        var diff = t2 - t1;
+        var diffYears = Math.floor(diff / years);
+        var diffDays = Math.floor((diff / days) - diffYears * 365);
+        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes *
+            minutes) / seconds);
+        document.getElementById("sitetime").innerHTML = "本站已勉强运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours +
+            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒" ;
+    }
+    siteTime();
+</script>
+<!--博客存活时间js end-->
+<!--动态背景js start-->
+<script>
+    $(function(){
+        var canvas = document.querySelector('canvas'),
+            ctx = canvas.getContext('2d')
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        ctx.lineWidth = .3;
+        ctx.strokeStyle = (new Color(150)).style;
+
+        var dots = {
+            nb: 150,
+            distance: 150,
+            d_radius: 200,
+            array: []
+        };
+
+        function colorValue(min) {
+            return Math.floor(Math.random() * 255 + min);
+        }
+
+        function createColorStyle(r,g,b) {
+            return 'rgba(' + r + ',' + g + ',' + b + ', 0.8)';
+        }
+
+        function mixComponents(comp1, weight1, comp2, weight2) {
+            return (comp1 * weight1 + comp2 * weight2) / (weight1 + weight2);
+        }
+
+        function averageColorStyles(dot1, dot2) {
+            var color1 = dot1.color,
+                color2 = dot2.color;
+
+            var r = mixComponents(color1.r, dot1.radius, color2.r, dot2.radius),
+                g = mixComponents(color1.g, dot1.radius, color2.g, dot2.radius),
+                b = mixComponents(color1.b, dot1.radius, color2.b, dot2.radius);
+            return createColorStyle(Math.floor(r), Math.floor(g), Math.floor(b));
+        }
+
+        function Color(min) {
+            min = min || 0;
+            this.r = colorValue(min);
+            this.g = colorValue(min);
+            this.b = colorValue(min);
+            this.style = createColorStyle(this.r, this.g, this.b);
+        }
+
+        function Dot(){
+            this.x = Math.random() * canvas.width;
+            this.y = Math.random() * canvas.height;
+
+            this.vx = -.5 + Math.random();
+            this.vy = -.5 + Math.random();
+
+            this.radius = Math.random() * 2;
+
+            this.color = new Color();
+        }
+
+        Dot.prototype = {
+            draw: function(){
+                ctx.beginPath();
+                ctx.fillStyle = this.color.style;
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+                ctx.fill();
+            }
+        };
+
+        function createDots(){
+            for(i = 0; i < dots.nb; i++){
+                dots.array.push(new Dot());
+            }
+        }
+
+        function moveDots() {
+            for(i = 0; i < dots.nb; i++){
+
+                var dot = dots.array[i];
+
+                if(dot.y < 0 || dot.y > canvas.height){
+                    dot.vx = dot.vx;
+                    dot.vy = - dot.vy;
+                }
+                else if(dot.x < 0 || dot.x > canvas.width){
+                    dot.vx = - dot.vx;
+                    dot.vy = dot.vy;
+                }
+                dot.x += dot.vx;
+                dot.y += dot.vy;
+            }
+        }
+
+        function connectDots() {
+            for(i = 0; i < dots.nb; i++){
+                for(j = 0; j < dots.nb; j++){
+                    i_dot = dots.array[i];
+                    j_dot = dots.array[j];
+
+                    if((i_dot.x - j_dot.x) < dots.distance && (i_dot.y - j_dot.y) < dots.distance && (i_dot.x - j_dot.x) > - dots.distance && (i_dot.y - j_dot.y) > - dots.distance){
+
+                            ctx.beginPath();
+                            ctx.strokeStyle = averageColorStyles(i_dot, j_dot);
+                            ctx.moveTo(i_dot.x, i_dot.y);
+                            ctx.lineTo(j_dot.x, j_dot.y);
+                            ctx.stroke();
+                            ctx.closePath();
+
+                    }
+                }
+            }
+        }
+
+        function drawDots() {
+            for(i = 0; i < dots.nb; i++){
+                var dot = dots.array[i];
+                dot.draw();
+            }
+        }
+
+        function animateDots() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            moveDots();
+            connectDots();
+            drawDots();
+
+            requestAnimationFrame(animateDots);
+        }
+
+
+
+        createDots();
+        requestAnimationFrame(animateDots);
+    });
+</script>
+<!--动态背景js end-->
+<!--使footer始终在底部js start-->
+<script>
+    $(function(){
+        function footerPosition(){
+            $("footer").removeClass("fixed-bottom");
+            var contentHeight = document.body.scrollHeight,//网页正文全文高度
+                winHeight = window.innerHeight;//可视窗口高度，不包括浏览器顶部工具栏
+            if(!(contentHeight > winHeight)){
+                //当网页正文高度小于可视窗口高度时，为footer添加类fixed-bottom
+                $("footer").addClass("fixed-bottom");
+            }
+        }
+        footerPosition();
+        $(window).resize(footerPosition);
+    });
+</script>
+<!--使footer始终在底部js end-->
+
+<script>
+    $('.ui.form').form({
+        fields :{
+            username : {
+                identifier : 'username',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请输入用戶名'
+                }]
+            },
+            password : {
+                identifier : 'password',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请输入密碼'
+                }]
+            }
+        }
+    });
+</script>
+</body>
+</html>

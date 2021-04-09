@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml" xml:lang="eng" lang="eng">
+<head th:replace="_fragments :: head(~{::title})">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+    <title>500错误页面</title>
+    <link rel="stylesheet" media="screen" href="../../static/_css/style.css" type="text/css" th:href="@{/_css/style.css}"/>
+
+    <link rel="stylesheet" type="text/css" href="../../static/css/style.css" th:href="@{/css/style.css}" />
+    <link rel="stylesheet" type="text/css" href="../../static/assets/waifu.css" th:href="@{/assets/waifu.css}"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.4/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/typo.css" th:href="@{/css/typo.css}">
+    <link rel="stylesheet" href="../../static/css/animate.css" th:href="@{/css/animate.css}">
+    <link rel="stylesheet" href="../../static/lib/prism/prism.css" th:href="@{/lib/prism/prism.css}">
+    <link rel="stylesheet" href="../../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
+
+
+    <script src="../../static/js/jquery-3.2.1.min.js" th:src="@{/js/jquery-3.2.1.min.js}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.4/dist/semantic.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="../../static/lib/prism/prism.js" th:src="@{/lib/prism/prism.js}"></script>
+    <script src="../../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
+    <script src="../../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
+
+</head>
+<body>
+
+<!--    头部导航栏 start-->
+<nav th:replace="_fragments :: menu(0)" class="ui inverted attached segment m-padded-mini">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui teal header item">Sliar</h2>
+            <a href="#" class="m-item item m-mobile-hide"><i class="home icon large"></i>首页</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="idea icon large"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="tags icon large"></i>标签</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="clone icon large"></i>归档</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="info icon large"></i>关于</a>
+            <div class="right m-item item m-mobile-hide">
+                <div class="ui icon inverted  input">
+                    <input type="text" placeholder="搜索">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button m-top-right m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+<!--    头部导航栏 end-->
+
+<!--中间内容 start-->
+<div class="controller">
+    <div class="objects ui stackable">
+        <!-- text area -->
+        <div class="text-area rotate">
+            <p class="errorStatus">Error 500</p>
+            <p class="details">There was a problem<br/><br/>An error occurred on the server.</p>
+        </div>
+        <!-- text area -->
+        <!-- home page -->
+        <div class="homepage rotate">
+            <a href="#">Back to homepage</a>
+        </div>
+        <!-- home page -->
+    </div>
+</div>
+<!--中间内容 end-->
+
+
+<!--    尾部 start-->
+<footer th:replace="_fragments :: footer" class="ui inverted vertical segment fixed-bottom">
+    <div class="ui center aligned container">
+        <div class="ui stackable inverted divided grid">
+            <div class="two wide column"></div>
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="../../static/img/wechat.png" th:src="@{/img/wechat.png}" alt="" class="ui image rounded small">
+                    </div>
+                </div>
+
+            </div>
+            <div class="six wide column">Copyright© 2020 &nbsp;&nbsp; Sliar <br><br>
+                <i class="heart icon animat" style="color:#ff71a8"></i>
+                <span class="my-face">ღゝ◡╹)ノ♡</span><br><br>
+                <span id="sitetime"></span><br><br>
+                <span>努力学习<a class="my-face">✊</a>&nbsp;&nbsp;争取一个好未来<a class="my-face">O(∩_∩)O</a></span>
+            </div>
+            <div class="four wide column">
+                <span>本博客由<a class="my-face">👉</a>Sliar<a class="my-face">👈</a>搭建</span><br><br>
+                <span>前端基于&nbsp;&nbsp;<a href="https://semantic-ui.com/">Semantic Ul</a></span><br><br>
+                <span>后台基于&nbsp;&nbsp;<a href="https://spring.io/">SpringBoot</a></span><br><br>
+                <i class="heart icon my-face" style="color:#ff71a8"></i>
+                <i class="heart icon my-face" style="color:#ff71a8"></i>
+                <i class="heart icon my-face" style="color:#ff71a8"></i>
+                <i class="heart icon my-face" style="color:#ff71a8"></i>
+                <i class="heart icon my-face" style="color:#ff71a8"></i>
+                <i class="heart icon my-face" style="color:#ff71a8"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--    尾部 end-->
+
+
+<!-- 看板娘设置 start -->
+<div class="waifu large screen only">
+    <div class="waifu-tips"></div>
+    <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
+    <div class="waifu-tool">
+        <span class="fui-home"></span>
+        <span class="fui-chat"></span>
+        <span class="fui-eye"></span>
+        <span class="fui-user"></span>
+        <span class="fui-photo"></span>
+        <span class="fui-cross"></span>
+    </div>
+</div>
+<script src="../../static/assets/waifu-tips.js" th:src="@{/assets/waifu-tips.js}"></script>
+<script src="../../static/assets/live2d.js" th:src="@{/assets/live2d.js}"></script>
+<script type="text/javascript">initModel("assets/")</script>
+<!-- 看板娘设置 end -->
+
+<script>
+    $(function(){
+        function footerPosition(){
+            $("footer").removeClass("fixed-bottom");
+            var contentHeight = document.body.scrollHeight,//网页正文全文高度
+                winHeight = window.innerHeight;//可视窗口高度，不包括浏览器顶部工具栏
+            if(!(contentHeight > winHeight)){
+                //当网页正文高度小于可视窗口高度时，为footer添加类fixed-bottom
+                $("footer").addClass("fixed-bottom");
+            }
+        }
+        footerPosition();
+        $(window).resize(footerPosition);
+    });
+</script>
+
+<!--博客存活时间js start-->
+<script language=javascript>
+    function siteTime() {
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth() + 1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+
+        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+
+        var t1 = Date.UTC(2021, 1, 1, 0, 0, 0); //北京时间2019-8-1 00:00:00
+        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+        var diff = t2 - t1;
+        var diffYears = Math.floor(diff / years);
+        var diffDays = Math.floor((diff / days) - diffYears * 365);
+        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes *
+            minutes) / seconds);
+        document.getElementById("sitetime").innerHTML = "本站已勉强运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours +
+            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒" ;
+    } /*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+    siteTime();
+</script>
+<!--博客存活时间js end-->
+
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide')
+    });
+</script>
+
+</body>
+</html>
